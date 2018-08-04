@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Django Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+ <!--  <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+    <script src="main.js"></script>   -->
+</head>
+<body>
+    <header class="container centre-align">
+        <h1>Django Blog!! :)</h1>
+    </header>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+
+        <a style="display:block" class="centre-align" href="/admin">Admin Login</a>
+    </div>
+    
+</body>
+</html>
